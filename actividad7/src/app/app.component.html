@@ -1,0 +1,17 @@
+
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink (click)="navigateToInicio()">Inicio</a>
+      
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink (click)="navigateToContacto()">Contacto</a>
+      
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink (click)="navigateToPortfolio()">Portfolio</a>
+      
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+  <router-outlet></router-outlet>
